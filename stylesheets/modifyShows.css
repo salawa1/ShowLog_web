@@ -1,0 +1,263 @@
+/* Universal body background */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(34, 41, 49) !important;
+    margin: 0;
+    padding: 0;
+    padding-top: 200px;
+}
+
+/* Headings */
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(34, 41, 49) !important;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding-left: 90px;
+    padding-bottom: 25px;
+    padding-top: 40px;
+}
+
+.form-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white !important;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#edit-form h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white !important;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grid container */
+#grid-container {
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Form Containers - Standardized */
+.form-container, #edit-form {
+    background: rgb(71, 84, 100);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 800px;
+}
+
+/* Labels & Text */
+label, #edit-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    color: white !important;
+}
+
+/* Input & Select Fields */
+input, select, #edit-form input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid rgb(55, 66, 80);
+    border-radius: 6px;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(55, 66, 80);
+    color: white;
+}
+
+input::placeholder, select {
+    color: rgb(200, 200, 200);
+}
+
+/* Button Styling - Standardized */
+button, .submit-btn, .save-btn, .cancel-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.edit-btn {
+    background: #007bff;
+    color: white;
+}
+
+button.edit-btn:hover {
+    background: #0056b3;
+}
+
+button.save-btn, .submit-btn {
+    background: #28a745;
+    color: white;
+}
+
+button.save-btn:hover, .submit-btn:hover {
+    background: #218838;
+}
+
+button.cancel-btn {
+    background: #dc3545;
+    color: white;
+}
+
+button.cancel-btn:hover {
+    background: #c82333;
+}
+
+/* Navbar */
+.navbar {
+    background: rgb(71, 84, 100);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-left: 20px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.navbar .logo-container {
+    width: 500px;
+    height: 110px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.navbar .logo-container img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.navbar .button-container {
+    display: flex;
+    gap: 8px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px; /* Increase padding for bigger buttons */
+    font-size: 18px; /* Increase text size */
+    font-weight: bold;
+    border-radius: 8px; /* Slightly larger rounded edges */
+    margin: 0 12px; /* Increase space between buttons */
+    background: rgb(71, 84, 100);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+    background: rgb(55, 66, 80);
+}
+
+.navbar a.log-btn {
+    background: #28a745;
+}
+
+.navbar a.log-btn:hover {
+    background: #218838;
+}
+
+.gridjs-search input {
+    background-color: rgb(71, 84, 100);
+    color: white;
+    border: 1px solid rgb(55, 66, 80);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.gridjs-search input::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+.gridjs-search input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.gridjs-footer {
+    background: rgb(71, 84, 100) !important;
+    color: rgb(34, 41, 49) !important;
+    padding: 12px;
+    border-top: 1px solid rgb(55, 66, 80) !important;
+}
+
+.gridjs-summary {
+    color: rgb(34, 41, 49) !important;
+    font-weight: bold;
+}
+
+
+.gridjs-pages button {
+    background: rgb(71, 84, 100) !important;
+    color: rgb(34, 41, 49) !important;
+    border: 1px solid rgb(55, 66, 80) !important;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.gridjs-pages button[disabled] {
+    background: rgb(55, 66, 80) !important;
+    color: rgb(34, 41, 49) !important;
+}
+
+/* Modal Edit Form */
+#edit-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+#edit-form {
+    background: rgb(71, 84, 100);
+    padding: 30px;
+    width: 450px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1002;
+}
+
+#edit-form input {
+    background-color: rgb(55, 66, 80);
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+#edit-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.edit-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
