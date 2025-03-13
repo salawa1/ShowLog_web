@@ -27,19 +27,19 @@ fetch(API_URL)
             table: {
                 "background-color": "rgb(71, 84, 100)",
                 "border-collapse": "collapse",
-                "color": "rgb(140, 140, 140)" /* Sets default text color */
+                "color": "rgb(140, 140, 140)"
             },
             th: {
-                "background-color": "rgb(71, 84, 100)", /* Header background */
+                "background-color": "rgb(71, 84, 100)",
                 "text-align": "left",
-                "border": "1px solid rgb(55, 66, 80)", /* Grid line color */
-                "color": "rgb(177, 177, 177)" /* Text color */
+                "border": "1px solid rgb(55, 66, 80)",
+                "color": "rgb(177, 177, 177)"
             },
             td: {
                 "padding": "8px",
-                "border": "1px solid rgb(55, 66, 80)", /* Grid line color */
-                "background-color": "rgb(71, 84, 100)", /* Keep same background */
-                "color": "rgb(230, 230, 230)" /* Text color */
+                "border": "1px solid rgb(55, 66, 80)",
+                "background-color": "rgb(71, 84, 100)",
+                "color": "rgb(230, 230, 230)"
             }
         }
     }).render(document.getElementById("grid-container"));
