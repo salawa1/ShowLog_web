@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Log a Show | ShowLog</title>
+    
+        <link href="./stylesheets/addShows.css" rel="stylesheet"></link>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!--Navigation-->
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="./images/ShowLog (500 x 150 px).png" alt="Logo">
+            </div>
+            <div class="button-container">
+                <a href="index.html">Home</a>
+                <a href="modifyShows.html">Diary</a>
+                <a href="addShows.html" class="log-btn">Log | +</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="form-container">
+                <h2>Add Shows</h2>
+                <form class ="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Entire show" required>
+
+                    <label for="name">Season:</label>
+                    <input type="text" id="seasons" name="seasons" placeholder="Enter number of seasons" required>
+
+                    <label for="name">Genre:</label>
+                    <input type="text" id="genre" name="genre" placeholder="Enter genre of show" required>
+
+                    <label for="name">Release Year:</label>
+                    <input type="text" id="releaseyear" name="releaseyear" placeholder="Enter release year" required>
+
+                    <label for="name">Country:</label>
+                    <input type="text" id="country" name="country" placeholder="Enter country of origin" required>
+
+                    <label for="name">Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select Service</option>
+                        <option value="Netflix">Netflix</option>
+                        <option value="Hulu">Hulu</option>
+                        <option value="Max">Max</option>
+                        <option value="Disney+">Disney+</option>
+                        <option value="Peacock">Peacock</option>
+                        <option value="Paramount+">Paramount+</option>
+                        <option value="Prime Video">Prime Video</option>
+                        <option value="Nickelodeon">Nickelodeon</option>
+                        <option value="HGTV">HGTV</option>
+                        <option value="Apple TV+">Apple TV+</option>
+                        <option value="Showtime">Showtime</option>
+                        <option value="NBC">NBC</option>
+                    </select>
+
+                    <div class="button-container">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- This is for toast messages-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.toaster.js"></script>
+
+        <!-- This is for the post message-->
+         <script src="./js/postShowLog.js"></script>
+    </body>
+</html>
