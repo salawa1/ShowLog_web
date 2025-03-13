@@ -102,11 +102,11 @@ h2 {
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 15px 30px; /* Increase padding for bigger buttons */
-    font-size: 18px; /* Increase text size */
+    padding: 15px 30px;
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 8px; /* Slightly larger rounded edges */
-    margin: 0 12px; /* Increase space between buttons */
+    border-radius: 8px;
+    margin: 0 12px;
     background: rgb(71, 84, 100);
     transition: background 0.3s, transform 0.2s;
 }
