@@ -104,3 +104,7 @@ How to contribute:
 ## 🔗 Live Demo
 
 [Visit ShowLog](https://showlog.netlify.app)
+
+## 📄 License
+
+This project is licensed under the MIT license. More license information can be found in the LICENSE file of the repository.
