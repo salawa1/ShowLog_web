@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
 }
 
@@ -78,62 +78,4 @@ input::placeholder, select {
 #grid-container {
     max-width: 90%;
     margin: auto;
-}
-
-.navbar {
-    background: rgb(71, 84, 100);
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding-left: 20px;
-    padding-right: 50px;
-    box-sizing: border-box;
-}
-
-.navbar .logo-container {
-    width: 500px;
-    height: 110px;
-    overflow: hidden;
-    padding-bottom: 30px;
-}
-
-.navbar .logo-container img {
-    width: 500px;
-    height: auto;
-    object-fit: cover;
-}
-
-.navbar .button-container {
-    display: flex;
-    gap: 8px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 0 8px;
-    background: rgb(71, 84, 100);
-    transition: background 0.3s;
-}
-
-.navbar a:hover {
-    background: rgb(55, 66, 80);
-}
-
-.navbar a.log-btn {
-    background: #28a745;
-}
-
-.navbar a.log-btn:hover {
-    background: #218838;
 }
